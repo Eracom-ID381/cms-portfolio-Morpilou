@@ -15,7 +15,6 @@
   --base-color-medium: rgba(0, 168, 150, 1);
   --base-color-dark: rgba(23, 163, 135, 0.9);
   --base-color-darker: #117565;
-
   --transparent: rgba(255, 255, 255, 0);
 }
 
@@ -44,11 +43,11 @@ img.img-myself {
   width: 100%;
   max-width: 20em;
 }
+
 img.img-max-height {
-
   width: 100%;
-  max-width: 24rem;
-
+  max-width: 30rem;
+  margin-right: 0;
 }
 
 p {
@@ -503,6 +502,7 @@ a:hover, a:focus, a:active {
 .bg-dark {
   background-color: var(--bg-purple-dark) !important;
 }
+
 .bg-contact {
   background-color: var(--bg-purple-light) !important;
 }
