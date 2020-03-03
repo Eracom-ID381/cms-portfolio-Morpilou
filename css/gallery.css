@@ -4,10 +4,22 @@ img {
   margin-right: auto;
 }
 
-.center {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%; -50%);
+img.img-myself {
+  width: 100%;
+  max-width: 20em;
+}
+
+img.portrait {
+  width: 100%;
+  max-width: 38rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+img.landscape {
+  width: 100%;
+  max-width: 50rem;
+  margin-right: 0;
 }
 
 .image {
