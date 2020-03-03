@@ -56,6 +56,20 @@ div.col-lg-3 h1, div.col-lg-3 h2, div.col-lg-3 h3, div.col-lg-3 h4 {
   font-family: Nunito, sans-serif;
 }
 
+.close {
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--white);
+  opacity: .5;
+}
+
+.close:hover {
+  color: var(--base-color-light);
+  opacity: .5;
+}
+
 .logo-top {
   position: fixed;
   left: 15px;
