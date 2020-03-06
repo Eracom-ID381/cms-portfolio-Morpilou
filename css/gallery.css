@@ -1,3 +1,21 @@
+:root {
+  --black: black;
+  --white: white;
+  --bg-purple-dark: #08070D;
+  --bg-purple-light: #1A1926;
+  --btn-secondary: #5a6268;
+  --btn-secondary-hover: #42484d;
+  /* --bg-scrollbar: rgba(50, 50, 50, 1);
+  --base-color-light:rgba(181, 33, 36, 1);
+  --base-color-medium:rgba(145, 16, 14, 1);
+   --base-color-dark:rgba(107, 13, 11, 1); */
+  --base-color-light: rgba(2, 195, 154, 1);
+  --base-color-medium: rgba(0, 168, 150, 1);
+  --base-color-dark: rgba(23, 163, 135, 0.9);
+  --base-color-darker: #117565;
+  --transparent: rgba(255, 255, 255, 0);
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -122,7 +140,7 @@ img.landscape {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border: 1px solid rgba(9, 12, 16, 1);
+  border: 1px solid var(--bg-purple-light);
   border-top-left-radius: .3rem;
   border-top-right-radius: .3rem;
 }
@@ -136,9 +154,9 @@ img.landscape {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: rgba(9, 12, 16, 1);
+  background-color: var(--bg-purple-light);
   background-clip: padding-box;
-  border: 1px solid rgba(9, 12, 16, 1);
+  border: 1px solid var(--bg-purple-light);
   border-radius: .3rem;
   outline: 0;
 }
@@ -151,7 +169,7 @@ img.landscape {
   -ms-flex-pack: end;
   justify-content: flex-end;
   padding: 1rem;
-  border-top: 1px solid rgba(9, 12, 16, 1);
+  border-top: 1px solid var(--bg-purple-light);
   border-bottom-right-radius: .3rem;
   border-bottom-left-radius: .3rem;
   text-align: center;
