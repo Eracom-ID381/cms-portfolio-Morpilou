@@ -458,10 +458,6 @@ a:hover, a:focus, a:active {
   border: 0;
 }
 
-.btn-journey {
-  padding: 1.25rem 2rem;
-}
-
 .btn-primary {
   background-color: var(--base-color-light);
   color: var(--base-color-darker);
