@@ -41,6 +41,15 @@ img.landscape {
   margin-left: auto;
 }
 
+.img-thumbnail {
+  padding: 0.5rem;
+  background-color: var(--base-color-medium);
+  border: 1px solid var(--base-color-light);
+  border-radius: 1.25rem;
+  max-width: 100%;
+  height: auto;
+}
+
 .image {
   width: 100%;
   height: 300px;
@@ -139,14 +148,33 @@ img.landscape {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .tz-gallery {
+    padding: 0;
+  }
 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) {
-  ...
+  .row {
+    display: flex;
+  }
+
+  div#last-project {
+    order: 0;
+  }
+
+  div#last-desc {
+    order: -1;
+  }
+
+  .container {
+    max-width: 100%;
+  }
 }
 
-/* Large desktop */
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {}
+
+/*
+ Large desktop */
 @media (min-width: 1200px) {
   ...
 }
