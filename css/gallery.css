@@ -16,6 +16,10 @@
   --transparent: rgba(255, 255, 255, 0);
 }
 
+div#last-project {
+  padding-right: 0;
+}
+
 img {
   display: block;
   margin-left: auto;
@@ -140,10 +144,17 @@ img.landscape {
 
   div#last-project {
     order: 0;
+    padding-right: 15px;
   }
 
   div#last-desc {
     order: -1;
+  }
+
+  img.img-myself {
+    width: 100%;
+    max-width: 12em;
+    margin-bottom: 2rem;
   }
 }
 
@@ -159,6 +170,7 @@ img.landscape {
 
   div#last-project {
     order: 0;
+    padding-right: 15px;
   }
 
   div#last-desc {
