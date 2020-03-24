@@ -1,334 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Portfolio web site">
+  <meta name="author" content="Nolan Sallai">
 
   <title>Nolan Sallai | Interactive Media Designer</title>
-  <link rel="icon" type="image/png" href="img/raccoon.png" />
+  <link rel="icon" type="image/png" href="resources/img/raccoon.png" />
 
-  <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.css" rel="stylesheet">
-  <link href="css/gallery.css" rel="stylesheet">
-
+  <link rel="stylesheet" href="vendor/Semantic-UI-CSS-master/semantic.min.css">
+  <link rel="stylesheet" href="resources/css/master.css">
 </head>
 
 <body id="page-top">
+  <a class="js-scroll-trigger" href="#page-top">
+    <img class="logo-top" src="resources/img/raccoon.svg" alt="logo raccoon">
+  </a>
 
-  <!-- Navigation -->
-  <a class="js-scroll-trigger" href="#page-top"><img class="logo-top" src="img/raccoon.svg" alt=""></a>
-  <a class="menu-toggle rounded" href="#">
-    <i class="fas fa-bars"></i>
+
+  <a class="menu-toggle" href="#">
+    <i class="bars icon"></i>
   </a>
   <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
       <li class="sidebar-brand">
-        <a class="js-scroll-trigger" href="#page-top">Nolan Sallai</a>
+        <a class="js-scroll-trigger" href="#page-top"><b>Nolan Sallai</b></a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#about">A propos de moi !</a>
-      </li>
-      <!-- <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#services">Services</a>
-      </li> -->
-      <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        <a class="js-scroll-trigger" href="#projet">Mes projets ...</a>
       </li>
       <li class="sidebar-nav-item">
-        <a class="js-scroll-trigger" href="#contact">Contact</a>
+        <a class="js-scroll-trigger" href="#about">Qui suis-je ?</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Me contacter !</a>
       </li>
     </ul>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead d-flex">
-    <div class="container text-center my-auto">
-      <h1 class="mx-auto my-0 text-uppercase mb-2">Nolan Sallai</h1>
-      <h2 class="text-white mx-auto mt-2 mb-5">Interactive Media Designer</h2>
-      <a href="#about" class="btn btn-primary js-scroll-trigger">Découvrir !</a>
+  <header class="masthead ">
+    <div class="text-center">
+      <h1>Nolan Sallai</h1>
+      <h2> - Interactive Media Designer - </h2>
     </div>
-    <div class="overlay"></div>
+
   </header>
 
-  <!-- About -->
-  <section class="content-section bg-dark" id="about">
-    <div class="container text-center text-white">
+  <!-- ======================= Projects ======================= -->
+  <section id="projet">
+    <div class="container">
+      <h1>Mes projets ...</h1>
       <div class="row">
-        <div class="col-sm-4 col-lg-4">
-          <img class="img-myself img-thumbnail" src="img/ID381_Audrey_Annen_Delachenal.jpg" alt="portrait">
+        <div class="column-first-project">
+          <div class="containers">
+            <img src="resources/img/shards-min.png" class="image">
+            <div class="overlay">
+              <div class="text">John Doe</div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-8 col-lg-8 mx-auto text-justify">
-          <h2 class="text-white">A propos de moi !</h2>
-          <p class="text-left">Hey ! Je m'appel Nolan Sallai, je suis actuellement un élève de l'ERACOM, une école d'art et de communication, en Suisse. Je me passionne pour le web, la modélisation 3D et le motion design</p>
-          <div class="col-lg-12 pt-4 pl-0">
-            <h4 class="text-white">Mes intérêts et hobbies</h4>
-          </div>
-          <div class="col-lg-12 pt-4 pl-0">
-            <ul>
-              <li>Les ratons-laveurs</li>
-              <li>Les jeux vidéos</li>
-              <li>La cuisine</li>
-              <li>La modélisation 3D</li>
-            </ul>
-          </div>
-          <button type="button" onclick="window.open('CV_Nolan_Sallai.pdf');" name="button" class="btn btn-primary filterButton mt-2">
-            </span> Voir mon CV <span class="icon-eye-fill" aria-hidden="true"></button>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="resources/img/shards-min.png">
+          <img src="resources/img/about_picture.jpg">
+        </div>
+        <div class="column">
+          <img src="resources/img/about_picture.jpg">
+          <img src="resources/img/shards-min.png">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Callout -->
-  <!-- <section class="callout">
-    <div class="container text-center">
-      <h2 class="mx-auto mb-5">Welcome to
-        <em>your</em>
-        next website!</h2>
-      <a class="btn btn-primary btn-xl" href="https://startbootstrap.com/template-overviews/stylish-portfolio/">Download Now!</a>
-    </div>
-  </section> -->
-
-  <!-- Portfolio -->
-  <section class="content-section bg-green" id="portfolio">
+  <!-- ======================= About ======================= -->
+  <section id="about">
     <div class="container">
-      <!-- Title portfolio -->
-      <div class="content-section-heading text-center">
-        <h3 class="text-white mb-0">Portfolio</h3>
-        <h2 class="mb-5 text-green" id>Projets récents</h2>
+      <h1>Qui suis-je ? </h1>
+      <div class="content">
+        <p>Je m'appel Nolan Sallai, je suis actuellement étudiant en Interactive Media Designer à l'ERACOM (Ecole Romande d'Art et Communication) à Lausanne. Je me passionne pour le web, la modélisation 3D et le motion design.</p>
       </div>
-      <div class="container gallery-container ">
-        <div class="tz-gallery">
-          <div class="row">
-            <div class="col-md-6 col-lg-6 " id="last-project">
-              <div class="thumbnail">
-                <a class="lightbox" href="#modal-portrait" data-toggle="modal">
-                  <div class="image last" style="background-image:url(img/Nolan_autoportrait.png)"></div>
-                </a>
-              </div>
-            </div>
-            <div class="col-xl-4 col-lg-5 col-md-5 p-0" id="last-desc">
-              <div class="featured-text text-center text-lg-left text-white">
-                <h4>Auto-portrait 3D</h4>
-                <p class=" mb-0 ">Auto-portrait 3D ayant permit d'apprendre à faire du "Box modeling"</p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4" id="left-project">
-              <div class="thumbnail">
-                <a class="lightbox" href="#modal-ambre" data-toggle="modal">
-                  <div class="image" style="background-image:url(img/ambre.jpg)"></div>
-                </a>
-                <div class="caption">
-                  <h3>Ambre Visinand</h3>
-                  <p>Photographie</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4" id="middle-project">
-              <div class="thumbnail">
-                <a class="lightbox" href="#modal-hand" data-toggle="modal">
-                  <div class="image" style="background-image:url(img/main.jpg)"></div>
-                </a>
-                <div class="caption">
-                  <h3>Ghosty hand</h3>
-                  <p>Photographie</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4" id="right-project">
-              <div class="thumbnail">
-                <a class="lightbox" href="img/Nolan_autoportrait.png">
-                  <div class="image" style="background-image:url(img/Nolan_autoportrait.png)"></div>
-                </a>
-                <div class="caption">
-                  <h3>Self-portait</h3>
-                  <p>Modélisation 3D</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 text-center mt-5 ">
-        <!-- ====================================  modal portait ============================================== -->
-        <div class="modal fade pr-0" id="modal-portrait" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-full" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body p-4" id="result">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 p-0 mr-0">
-                    <img class="portrait" src="img/Nolan_autoportrait.png" alt="Ambre">
-                  </div>
-                  <div class="col-xl-4 col-lg-6 p-0 ">
-                    <div class="  featured-text text-lg-left align-middle text-white position-sticky">
-                      <h1>Auto-portrait 3D</h4>
-                        <br>
-                        <h5>Outils utilisés :</h5>
-                        <ul>
-                          <li>Cinema 4D</li>
-                        </ul>
-                        <br>
-                        <p>
-                          Ce projet nous
-                        </p>
-                        <br>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="icon-arrow-left"></span> Revenir aux projets</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ====================================  modal ambre ============================================== -->
-        <div class="modal fade pr-0" id="modal-ambre" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-full" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body p-4" id="result">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 p-0 mr-0">
-                    <img class="portrait" src="img/ambre.jpg" alt="Ambre">
-                  </div>
-                  <div class="col-xl-4 col-lg-6 p-0 ">
-                    <div class="  featured-text text-lg-left align-middle text-white position-sticky">
-                      <h1>Ambre Visinand</h4>
-                        <br>
-                        <h5>Outils utilisés :</h5>
-                        <ul>
-                          <li>Adobe Lightroom </li>
-                        </ul>
-                        <h5>Matériel utilisé :</h5>
-                        <ul>
-                          <li>Canon EOS 80</li>
-                          <li>Softbox avec gélatines de couleurs</li>
-                        </ul>
-                        <br>
-                        <p>
-                          Ce projet nous
-                        </p>
-                        <br>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="icon-arrow-left"></span> Revenir aux projets</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ====================================  modal main ============================================== -->
-        <div class="modal fade pr-0" id="modal-hand" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-full" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div class="modal-body p-4" id="result">
-                <div class="row">
-                  <div class="col-lg-6 col-md-6 p-0 mr-0">
-                    <img class="landscape" src="img/main.jpg" alt="Ambre">
-                  </div>
-                  <div class="col-xl-4 col-lg-6 p-0 ">
-                    <div class="  featured-text text-lg-left align-middle text-white position-sticky">
-                      <h1>mains fantômes</h4>
-                        <br>
-                        <h5>Outils utilisés :</h5>
-                        <ul>
-                          <li>Adobe Lightroom </li>
-                        </ul>
-                        <h5>Matériel utilisé :</h5>
-                        <ul>
-                          <li>Canon EOS 80</li>
-                        </ul>
-                        <br>
-                        <p>
-                          Ce projet nous
-                        </p>
-                        <br>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal"><span class="icon-arrow-left"></span> Revenir aux projets</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end modal -->
-        <a href="gallery.html" class="btn btn-primary btn-journey js-scroll-trigger">Tout afficher !</a>
-      </div>
+    </div>
   </section>
-  <!-- Call to Action -->
-  <section id="contact" class="content-section bg-contact text-white-50">
-    <div class="container text-center">
-      <h2 class="mb-4 text-white">Contact</h2>
-      <ul class="pl-0 unstyled">
-        <li>
-          <h5>Nolan Sallai</h5>
-        </li>
-        <li><a href="mailto:sallai.nolan@gmail.com" target="_blank">sallai.nolan@gmail.com</a></li>
-      </ul>
+  <!-- ======================= About ======================= -->
+
+  <section id="contact">
+    <div class="content">
+      <h1>Me contacter ! </h1>
+      <a href="mailto:sallai.nolan@gmail.com" target="_blank" class="btn btn-contact"><i class="envelope icon"></i> Par mail</a>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer text-center bg-footer">
-    <div class="container">
-      <!-- <ul class="list-inline mb-5">
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-instagram"></i>
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white mr-3" href="#">
-            <i class="icon-social-linkedin"></i>
-          </a>
-        </li>
-      </ul> -->
-      <p class="text-muted small mb-0">Copyright &copy; Nolan Sallai 2020</p>
-    </div>
-  </footer>
+  <!-- ======================= Contact ======================= -->
+  <section id="copyright">
+    <p> Copyright &copy Nolan Sallai 2020</p>
+  </section>
 
   <!-- Scroll to Top Button-->
-  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fas fa-angle-up"></i>
+  <a class="scroll-to-top circular ui icon button js-scroll-trigger" href="#page-top" style="display:inline;">
+    <i class="angle up icon"></i>
   </a>
 
-  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/Semantic-UI-CSS-master/semantic.min.js" charset="utf-8"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/stylish-portfolio.js"></script>
-
+  <script src="resources/js/master.js"></script>
 
 
 </body>
