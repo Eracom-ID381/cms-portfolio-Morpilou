@@ -10,6 +10,7 @@
   --primary-color-medium: rgb(38, 129, 115);
   --primary-color-dark: rgb(17, 117, 101);
   --primary-color-darker: rgb(16, 107, 92);
+  --logo-background: url(/resources/img/raccoon.svg);
 }
 
 * {
@@ -33,11 +34,6 @@ p {
 }
 
 section#about {
-  background-image: url("resources/img/about_picture.jpg") !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: 100% 100%;
   background: var(--primary-color-medium);
   color: var(--base-color-white);
 }
@@ -109,6 +105,14 @@ section#projet {
   align-items: flex-start;
 }
 
+.logo-light {
+  --background: url(/resources/img/raccoon.svg);
+}
+
+.logo-dark {
+  --background: url(/resources/img/raccoon-dark.svg);
+}
+
 .logo-top {
   position: fixed;
   left: 15px;
@@ -116,7 +120,10 @@ section#projet {
   width: 7rem;
   height: 7rem;
   line-height: 50px;
-  z-index: 1000;
+  z-index: 10;
+  background-image: var(--background);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .masthead {
