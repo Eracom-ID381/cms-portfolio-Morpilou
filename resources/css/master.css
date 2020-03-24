@@ -23,6 +23,31 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+footer#footer {
+  text-align: center;
+  background: var(--base-color-dark);
+  color: var(--base-color-white);
+  padding: 1rem 8rem 1rem 8rem;
+  height: auto;
+}
+
+footer#footer p {
+  font-size: 1rem;
+  color: var(--base-color-white);
+  opacity: 0.5;
+}
+
+footer#footer p.footer-design {
+  font-size: 0.9rem;
+  color: var(--base-color-white);
+  opacity: 0.5;
+}
+
+footer#projet {
+  background: var(--base-color-white);
+  color: var(--base-color-dark);
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
@@ -51,25 +76,6 @@ section#contact>.content {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-}
-
-section#copyright {
-  text-align: center;
-  background: var(--base-color-dark);
-  color: var(--base-color-white);
-  padding: 1rem 8rem 1rem 8rem;
-  height: auto;
-}
-
-section#copyright p {
-  font-size: 1rem;
-  color: var(--base-color-white);
-  opacity: 0.5;
-}
-
-section#projet {
-  background: var(--base-color-white);
-  color: var(--base-color-dark);
 }
 
 .btn {
