@@ -369,8 +369,15 @@ section#projet {
 
 /* ======================= min 768px ======================= */
 @media (max-width: 768px) {
-  /* .logo-top {
-    display: none;
+  .container {
+    padding: 4rem;
+  }
+
+  .column {
+    flex: 100%;
+    max-width: 100%;
+    padding: 0 4px;
+    position: relative;
   }
 
   .masthead {
@@ -386,6 +393,16 @@ section#projet {
     font-family: 'Montserrat', sans-serif;
   }
 
+  .masthead h2 {
+    display: none;
+  }
+
+  /* .logo-top {
+    display: none;
+  }
+
+
+
   .masthead h1 {
     margin: 0;
     padding: 0;
@@ -396,16 +413,9 @@ section#projet {
     font-family: 'Montserrat', sans-serif;
   }
 
-  .masthead h2 {
-    display: none;
-  }
 
-  .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  } */
+
+ */
 }
 
 /* ======================= min 1024px ======================= */
