@@ -42,11 +42,20 @@
 
 })(jQuery); // End of use strict
 
-var resize = document.querySelector("#page-top");
+var resizeMain = document.querySelector("#page-top");
 window.addEventListener("resize", function() {
   if (window.innerWidth < 768) {
     resize.classList.add("main");
   } else if (window.innerWidth > 768) {
     resize.classList.remove("main");
+  }
+});
+
+var resizeContact = document.querySelector("#btn-contact");
+window.addEventListener("resize", function() {
+  if (window.innerWidth < 768) {
+    resizeContact.classList.remove("btn-contact");
+  } else if (window.innerWidth > 768) {
+    resizeContact.classList.add("btn-contact");
   }
 });
