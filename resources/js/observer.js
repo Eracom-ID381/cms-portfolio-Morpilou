@@ -30,7 +30,7 @@ const aboutObserver = new IntersectionObserver(function(entries, options) {
         logo.classList.remove("logo-dark");
       } else {
         logo.classList.add("logo-dark");
-        logo.classList.remove("logo-light");
+        logo.classList.remove("logo-light ");
 
       }
     });
