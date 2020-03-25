@@ -39,23 +39,14 @@
       $('.scroll-to-top').fadeOut();
     }
   });
-  // // Scroll to top button appear
-  // $(document).scroll(function() {
-  //   var scrollDistance = $(this).scrollTop();
-  //   if (scrollDistance > 450) {
-  //     $('.logo-top').fadeOut();
-  //   } else {
-  //     $('.logo-top').fadeIn();
-  //   }
-  // });
-  // // Scroll to top button appear
-  // $(document).scroll(function() {
-  //   var scrollDistance = $(this).scrollTop();
-  //   if (scrollDistance > 450) {
-  //     $('.logo-tesz').fadeIn();
-  //   } else {
-  //     $('.logo-tesz').fadeOut();
-  //   }
-  // });
 
 })(jQuery); // End of use strict
+
+var resize = document.querySelector("#page-top");
+window.addEventListener("resize", function() {
+  if (window.innerWidth < 768) {
+    resize.classList.add("main");
+  } else if (window.innerWidth > 768) {
+    resize.classList.remove("main");
+  }
+});
