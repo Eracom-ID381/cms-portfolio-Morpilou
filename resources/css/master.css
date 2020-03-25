@@ -111,11 +111,11 @@ section#contact>.content {
 }
 
 .logo-light {
-  --background: url(cms-portfolio-Morpilou/resources/img/raccoon.svg);
+  --background: url(../../resources/img/raccoon.svg);
 }
 
 .logo-dark {
-  --background: url(cms-portfolio-Morpilou/resources/img/raccoon-dark.svg);
+  --background: url(../../resources/img/raccoon-dark.svg);
 }
 
 .logo-top {
