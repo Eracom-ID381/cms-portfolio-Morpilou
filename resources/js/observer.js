@@ -10,8 +10,12 @@ const projectObserver = new IntersectionObserver(function(entries, options) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
         logo.classList.add("logo-dark");
+        logo.classList.remove("logo-light");
+
       } else {
         logo.classList.remove("logo-dark");
+        logo.classList.add("logo-light");
+
       }
     });
   },
@@ -22,9 +26,12 @@ projectObserver.observe(masthead);
 const aboutObserver = new IntersectionObserver(function(entries, options) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
+        logo.classList.add("logo-light");
         logo.classList.remove("logo-dark");
       } else {
         logo.classList.add("logo-dark");
+        logo.classList.remove("logo-light");
+
       }
     });
   },
