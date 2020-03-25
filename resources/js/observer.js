@@ -1,6 +1,5 @@
 const logo = document.querySelector(".logo-top");
-const masthead = document.querySelector("header");
-const section = document.querySelector("section");
+const masthead = document.querySelector(".masthead");
 
 const options = {
   rootMargin: "-75px 0px 0px 0px"
@@ -9,12 +8,10 @@ const options = {
 const projectObserver = new IntersectionObserver(function(entries, options) {
     entries.forEach(entry => {
       if (!entry.isIntersecting) {
-        logo.classList.add("logo-dark");
-        logo.classList.remove("logo-light");
+        logo.classList.replace("logo-light", "logo-dark");
 
       } else {
-        logo.classList.remove("logo-dark");
-        logo.classList.add("logo-light");
+        logo.classList.replace("logo-dark", "logo-light");
 
       }
     });
@@ -22,19 +19,3 @@ const projectObserver = new IntersectionObserver(function(entries, options) {
   options);
 
 projectObserver.observe(masthead);
-
-const aboutObserver = new IntersectionObserver(function(entries, options) {
-    entries.forEach(entry => {
-      if (!entry.isIntersecting) {
-        logo.classList.add("logo-light");
-        logo.classList.remove("logo-dark");
-      } else {
-        logo.classList.add("logo-dark");
-        logo.classList.remove("logo-light");
-
-      }
-    });
-  },
-  options);
-
-aboutObserver.observe(section);
