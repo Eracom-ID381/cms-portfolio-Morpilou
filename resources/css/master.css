@@ -50,6 +50,11 @@ footer#projet {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  padding: 0 4px;
+}
+
+h1.title {
+  font-size: 3rem;
 }
 
 p {
@@ -80,8 +85,6 @@ section#contact>.content {
 .btn {
   width: 15rem;
   margin-top: 15px;
-  background: var(--primary-color-light);
-  color: var(--base-color-white);
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 0.8rem 2rem;
   font-size: 80%;
@@ -92,6 +95,8 @@ section#contact>.content {
 
 .btn-contact {
   transition: width 1s;
+  background: var(--primary-color-light);
+  color: var(--base-color-white);
 }
 
 .btn-contact:hover {
@@ -166,6 +171,11 @@ section#contact>.content {
   letter-spacing: 0.8rem;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
+}
+
+.masthead#gallery {
+  padding: 4rem;
+  height: 20vh;
 }
 
 .menu-toggle {
@@ -420,7 +430,7 @@ section#contact>.content {
     display: none;
   }
 
-  .masthead {
+  .masthead, .masthead#gallery {
     padding: 2rem;
     display: flex;
     flex-direction: column;
