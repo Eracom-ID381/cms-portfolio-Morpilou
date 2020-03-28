@@ -82,6 +82,14 @@ section#contact>.content {
   align-items: center;
 }
 
+.back {
+  text-align: center;
+  padding-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .btn {
   width: 15rem;
   margin-top: 15px;
@@ -91,6 +99,21 @@ section#contact>.content {
   text-transform: uppercase;
   letter-spacing: .15rem;
   border: 0;
+}
+
+.btn-back {
+  padding: 1.3rem 2rem;
+  border: 2px solid var(--primary-color-light);
+  color: var(--primary-color-light);
+  background: var(--transparent);
+  margin: 0 4px;
+  transition: width 1s, background 0.5s;
+}
+
+.btn-back:hover {
+  width: 20rem;
+  background: var(--primary-color-medium);
+  color: var(--base-color-white);
 }
 
 .btn-contact {
@@ -395,7 +418,7 @@ section#contact>.content {
 
 /* ======================= min 768px ======================= */
 @media (max-width: 768px) {
-  h1 {
+  h1, h1.title {
     font-size: 1.6rem;
   }
 

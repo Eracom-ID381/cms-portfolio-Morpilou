@@ -45,9 +45,9 @@
 var resizeMain = document.querySelector("#page-top");
 window.addEventListener("resize", function() {
   if (window.innerWidth < 768) {
-    resize.classList.add("main");
+    resizeMain.classList.add("main");
   } else if (window.innerWidth > 768) {
-    resize.classList.remove("main");
+    resizeMain.classList.remove("main");
   }
 });
 
