@@ -41,13 +41,3 @@
   });
 
 })(jQuery); // End of use strict
-
-
-var resizeContact = document.querySelector("#btn-contact");
-window.addEventListener("resize", function() {
-  if (window.innerWidth < 768) {
-    resizeContact.classList.remove("btn-contact");
-  } else if (window.innerWidth > 768) {
-    resizeContact.classList.add("btn-contact");
-  }
-});
