@@ -42,14 +42,6 @@
 
 })(jQuery); // End of use strict
 
-var resizeMain = document.querySelector("#page-top");
-window.addEventListener("resize", function() {
-  if (window.innerWidth < 768) {
-    resizeMain.classList.add("main");
-  } else if (window.innerWidth > 768) {
-    resizeMain.classList.remove("main");
-  }
-});
 
 var resizeContact = document.querySelector("#btn-contact");
 window.addEventListener("resize", function() {

@@ -168,10 +168,6 @@ section#contact>.content {
   background-position: center;
 }
 
-.main {
-  padding-top: 6vh;
-}
-
 .masthead {
   padding: 8rem;
   display: flex;
@@ -441,6 +437,10 @@ section#contact>.content {
 
   section#contact {
     padding: 3rem 2rem 3rem 2rem;
+  }
+
+  #page-top {
+    padding-top: 6vh;
   }
 
   .container {
