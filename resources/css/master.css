@@ -409,12 +409,12 @@ section#contact>.content {
 }
 
 /* ======================= Projets image hover - w3c ======================= */
-.containers {
+.img-container {
   position: relative;
 }
 
-.containers:hover .overlay {
-  opacity: 0.7;
+.img-container .overlay:hover {
+  opacity: 1;
 }
 
 .column-100 .overlay .text {
@@ -470,9 +470,6 @@ section#contact>.content {
 }
 
 /* ======================= media queries ======================= */
-/* ======================= min 640px ======================= */
-@media (max-width: 640px) {}
-
 /* ======================= min 768px ======================= */
 @media (max-width: 768px) {
   h1, h1.title {
@@ -577,7 +574,12 @@ section#contact>.content {
 }
 
 /* ======================= min 1024px ======================= */
-@media (max-width: 1024px) {}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 4rem 9rem;
+  }
 
-/* ======================= min 1280px ======================= */
-@media (max-width: 1280px) {}
+  .text {
+    font-size: 3rem;
+  }
+}
