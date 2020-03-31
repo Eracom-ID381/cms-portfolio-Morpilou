@@ -4,8 +4,9 @@
   --transparent: rgba(255, 255, 255, 0);
   --base-color-white: #EBF2FA;
   /* purple */
-  --base-color-light: #1A1926;
+  --base-color-light: rgb(26, 25, 38);
   --base-color-dark: rgb(19, 19, 28);
+  --base-color-dark-transparent: rgba(19, 19, 28, 0.1);
   --primary-color-light: rgb(60, 142, 129);
   --primary-color-medium: rgb(38, 129, 115);
   --primary-color-dark: rgb(17, 117, 101);
@@ -66,9 +67,14 @@ h1.title {
   margin: 0;
 }
 
-h2.project-category {
+h2.project-category, h2.image-title {
   color: var(--primary-color-medium);
   margin: 0;
+}
+
+hr {
+  border-top: 0.25rem dashed var(--base-color-dark-transparent);
+  margin: 3rem 0;
 }
 
 p {
