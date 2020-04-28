@@ -34,3 +34,18 @@
   });
 
 })(jQuery); // End of use strict
+
+// copy to clipboard
+function copyToClipboard(element) {
+  var $temp = $("<input>");
+  $("body").append($temp);
+  $temp.val($(element).text()).select();
+  document.execCommand("copy");
+  $temp.remove();
+  $('.ui.dimmer').dimmer("show");
+  $(function() {
+    setTimeout(function() {
+      $('.ui.dimmer').dimmer("hide");
+    }, 1500);
+  });
+}

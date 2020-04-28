@@ -4,11 +4,13 @@
   --transparent: rgba(255, 255, 255, 0);
   --base-color-white: #EBF2FA;
   /* purple */
-  --base-color-light: rgb(26, 25, 38);
+  --base-color-light: rgba(26, 25, 38, 1);
+  --base-color-light-dimmer: rgba(26, 25, 38, 0.8);
   --base-color-dark: rgb(19, 19, 28);
   --base-color-dark-transparent: rgba(19, 19, 28, 0.1);
   --primary-color-light: rgb(60, 142, 129);
-  --primary-color-medium: rgb(38, 129, 115);
+  --primary-color-medium: rgba(38, 129, 115, 1);
+  --primary-color-medium-dimmer: rgba(38, 129, 115, 0.8);
   --primary-color-dark: rgb(17, 117, 101);
   --primary-color-darker: rgb(16, 107, 92);
 }
@@ -25,6 +27,19 @@
 
 a {
   text-decoration: none;
+}
+
+a#mail {
+  color: var(--primary-color-light);
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+a#mail:hover {
+  color: var(--primary-color-medium);
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -462,11 +477,15 @@ section#contact>.content {
 }
 
 .ui.breadcrumb a {
-  color: var(--primary-color-light);
+  color: darkgray;
 }
 
 .ui.breadcrumb a:hover {
-  color: red;
+  color: var(--primary-color-medium);
+}
+
+.ui.dimmer {
+  background: linear-gradient(125deg, var(--base-color-light-dimmer) 0%, var(--primary-color-medium-dimmer)100%);
 }
 
 /* ======================= media queries ======================= */
