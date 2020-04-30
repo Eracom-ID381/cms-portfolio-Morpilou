@@ -18,7 +18,7 @@
   <a class="js-scroll-trigger logo-top logo-light" href="#page-top"></a>
   <header class="masthead" id="gallery">
     <div class="text-center">
-      <h1>Photographies</h1>
+      <h1>3D</h1>
     </div>
   </header>
 
@@ -29,19 +29,28 @@
       <div class="ui breadcrumb">
         <a href="index.html" class="section">Accueil</a>
         <i class="right angle icon divider"></i>
-        <div class="active section">Photographies</div>
+        <div class="active section">3D</div>
       </div>
       <div class="project">
-        <h2 class="project-category">Cinema 4D</h2>
-        <h1 class="title">Stories</h1>
-        <p class="description">Projet de stories Instagram. Plus d'informations à venir.</p>
+        <h2 class="project-category">Spoonzilla</h2>
+        <h1 class="title">Archimbol</h1>
+        <p class="description">Spoonzilla est une composition crée à partir de vaisselle modélisée sur la base d'objet réel. Projet dans le carde d'un court à L'ERACOM.</p>
         <div class="row">
-          <div class="column-100">
-            <a href="">
-              <div class="img-container">
-                <img src="resources/img/wasp_bg0015.jpg" class="image" alt="free">
-              </div>
-            </a>
+          <div class="column">
+            <div class="img-container">
+              <img src="resources/img/3d/godzilla.jpg" class="image" alt="free">
+            </div>
+          </div>
+          <div class="column">
+            <div class="img-container">
+              <img src="resources/img/3d/bowl.jpg" class="image" alt="free">
+            </div>
+            <div class="img-container">
+              <img src="resources/img/3d/spoon.jpg" class="image" alt="free">
+            </div>
+            <div class="img-container">
+              <img src="resources/img/3d/fork.jpg" class="image" alt="free">
+            </div>
           </div>
         </div>
         <div class="back">
@@ -55,9 +64,17 @@
   <section id="contact">
     <div class="content">
       <h1>Me contacter ! </h1>
-      <a href="mailto:sallai.nolan@gmail.com" target="_blank" id="btn-contact" class="btn btn-contact"><i class="envelope icon"></i> Par mail</a>
+      <a data-tooltip="Copier dans le Presse-papiers" data-position="right center" onclick="copyToClipboard('#mail')" id="mail">sallai.nolan@gmail.com</a>
     </div>
   </section>
+  <div class="ui page dimmer">
+    <div class="content">
+      <h1 class="ui inverted icon header">
+        <i class="check icon"></i>
+        Copié !
+      </h1>
+    </div>
+  </div>
 
   <!-- ======================= Footer ======================= -->
   <footer id="footer">
@@ -71,8 +88,8 @@
     <i class="angle up icon"></i>
   </a>
 
-  <script src="vendor/Semantic-UI-CSS-master/semantic.min.js" charset="utf-8"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/Semantic-UI-CSS-master/semantic.min.js" charset="utf-8"></script>
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
   <script src="resources/js/master.js"></script>
   <script src="resources/js/observer.js" charset="utf-8"></script>
